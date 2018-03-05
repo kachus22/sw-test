@@ -1,0 +1,45 @@
+{
+  "configVersion": 1,
+  "index": "https://zipengye.github.io/sw-test/index.html", 
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://zipengye.github.io/sw-test/favicon.ico",
+        "https://zipengye.github.io/sw-test/index.html",
+        "https://zipengye.github.io/sw-test/inline.21de4057c7937639c359.bundle.js",
+        "https://zipengye.github.io/sw-test/main.efcf56686f59151d3bf6.bundle.js",
+        "https://zipengye.github.io/sw-test/polyfills.5adc1cb4b508020de7c0.bundle.js",
+        "https://zipengye.github.io/sw-test/styles.b669bb56fa7f5af0520f.bundle.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://zipengye.github.io/sw-test/assets/css/material-icon.css",
+        "https://zipengye.github.io/sw-test/assets/font/material-icon-font.woff2",
+        "https://zipengye.github.io/sw-test/assets/img/github/github.svg",
+        "https://zipengye.github.io/sw-test/assets/img/youtube/youtube.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "https://zipengye.github.io/sw-test/inline.21de4057c7937639c359.bundle.js": "3583fabca537ebae5f5f5c13b7ef14965d689d2f",
+    "https://zipengye.github.io/sw-test/assets/css/material-icon.css": "5f405cc10e411c47ac0f1ea8be2aa7eb9997828f",
+    "https://zipengye.github.io/sw-test/main.efcf56686f59151d3bf6.bundle.js": "9e22a769661e1fc0be37687ed89d0d14d6852638",
+    "https://zipengye.github.io/sw-test/assets/font/material-icon-font.woff2": "f27268455e6cd614f49d428363be98c021579caf",
+    "https://zipengye.github.io/sw-test/polyfills.5adc1cb4b508020de7c0.bundle.js": "c32637cb3ea130ecb54b5e80e31d1fd422272817",
+    "https://zipengye.github.io/sw-test/assets/img/github/github.svg": "26a18aaeb14964e04f691a49eb7325c737759147",
+    "https://zipengye.github.io/sw-test/styles.b669bb56fa7f5af0520f.bundle.css": "bc733cbe58f24e9413b45a9c8e341e1b389b0f11",
+    "https://zipengye.github.io/sw-test/assets/img/youtube/youtube.png": "918f7097f292cbe11db5d2f36c9692124be9f66f",
+    "https://zipengye.github.io/sw-test/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
+    "https://zipengye.github.io/sw-test/index.html": "ec546567b2e5d06855f4dc0052db27f08d9cfaa6"
+  }
+}
