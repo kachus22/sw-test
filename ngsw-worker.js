@@ -622,6 +622,7 @@ class AssetGroup {
         const url = this.getConfigUrl(req.url);
         // If a hash is available for this resource, then compare the fetched version with the
         // canonical hash. Otherwise, the network version will have to be trusted.
+        console.log(this.hashes.has(url), url);
         if (this.hashes.has(url)) {
             // It turns out this resource does have a hash. Look it up. Unless the fetched version
             // matches this hash, it's invalid and the whole manifest may need to be thrown out.
@@ -718,6 +719,7 @@ class AssetGroup {
             return await this.scope.fetch(req);
         }
         catch (err) {
+          console.log(err);
             return this.adapter.newResponse('', {
                 status: 504,
                 statusText: 'Gateway Timeout',
