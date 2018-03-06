@@ -1,17 +1,17 @@
 {
   "configVersion": 1,
-  "index": "https://zipengye.github.io/sw-test/index.html", 
+  "index": "/sw-test/index.html",
   "assetGroups": [
     {
       "name": "app",
       "installMode": "prefetch",
       "updateMode": "prefetch",
       "urls": [
-        "https://zipengye.github.io/sw-test/index.html",
-        "https://zipengye.github.io/sw-test/inline.318b50c57b4eba3d437b.bundle.js",
-        "https://zipengye.github.io/sw-test/main.1da0b36212267ae2a9bd.bundle.js",
-        "https://zipengye.github.io/sw-test/polyfills.bf95165a1d5098766b92.bundle.js",
-        "https://zipengye.github.io/sw-test/styles.ac89bfdd6de82636b768.bundle.css"
+        "/sw-test/index.html",
+        "/sw-test/inline.318b50c57b4eba3d437b.bundle.js",
+        "/sw-test/main.1da0b36212267ae2a9bd.bundle.js",
+        "/sw-test/polyfills.bf95165a1d5098766b92.bundle.js",
+        "/sw-test/styles.ac89bfdd6de82636b768.bundle.css"
       ],
       "patterns": []
     },
@@ -25,10 +25,10 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "https://zipengye.github.io/sw-test/inline.318b50c57b4eba3d437b.bundle.js": "998c6060446975e566fd17509558ddc68d72eec3",
-    "https://zipengye.github.io/sw-test/main.1da0b36212267ae2a9bd.bundle.js": "7828d52d4dee3ec72ab82c18a72a674485138fa5",
-    "https://zipengye.github.io/sw-test/polyfills.bf95165a1d5098766b92.bundle.js": "5f49131c0c147a20f91b1e77814434e0c77bd3dc",
-    "https://zipengye.github.io/sw-test/styles.ac89bfdd6de82636b768.bundle.css": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
-    "https://zipengye.github.io/sw-test/index.html": "4419fea924dd4c55714978f870d4df1d75f2d1d6"
+    "/sw-test/inline.318b50c57b4eba3d437b.bundle.js": "998c6060446975e566fd17509558ddc68d72eec3",
+    "/sw-test/main.1da0b36212267ae2a9bd.bundle.js": "7828d52d4dee3ec72ab82c18a72a674485138fa5",
+    "/sw-test/polyfills.bf95165a1d5098766b92.bundle.js": "5f49131c0c147a20f91b1e77814434e0c77bd3dc",
+    "/sw-test/styles.ac89bfdd6de82636b768.bundle.css": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+    "/sw-test/index.html": "32de9b6637b2d19a0e42edfc124a3a7c8ecd7524"
   }
 }
