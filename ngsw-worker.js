@@ -397,7 +397,7 @@ class AssetGroup {
         // Either the request matches one of the known resource URLs, one of the patterns for
         // dynamically matched URLs, or neither. Determine which is the case for this request in
         // order to decide how to handle it.
-        if (this.config.urls.indexOf(url) !== -1 || this.patterns.some(pattern => pattern.test(url))) {
+        if (this.config.urls.indexOf(req.url) !== -1 || this.patterns.some(pattern => pattern.test(req.url))) {
             // This URL matches a known resource. Either it's been cached already or it's missing, in
             // which case it needs to be loaded from the network.
             // Open the cache to check whether this resource is present.
@@ -408,7 +408,7 @@ class AssetGroup {
             if (cachedResponse !== undefined) {
                 // A response has already been cached (which presumably matches the hash for this
                 // resource). Check whether it's safe to serve this resource from cache.
-                if (this.hashes.has(url)) {
+                if (this.hashes.has(req.url)) {
                     // This resource has a hash, and thus is versioned by the manifest. It's safe to return
                     // the response.
                     return cachedResponse;
@@ -623,10 +623,10 @@ class AssetGroup {
         const url = this.getConfigUrl(req.url);
         // If a hash is available for this resource, then compare the fetched version with the
         // canonical hash. Otherwise, the network version will have to be trusted.
-        if (this.hashes.has(url)) {
+        if (this.hashes.has(req.url)) {
             // It turns out this resource does have a hash. Look it up. Unless the fetched version
             // matches this hash, it's invalid and the whole manifest may need to be thrown out.
-            const canonicalHash = this.hashes.get(url);
+            const canonicalHash = this.hashes.get(req.url);
             // Ideally, the resource would be requested with cache-busting to guarantee the SW gets
             // the freshest version. However, doing this would eliminate any chance of the response
             // being in the HTTP cache. Given that the browser has recently actively loaded the page,
@@ -691,11 +691,11 @@ class AssetGroup {
         const url = this.getConfigUrl(req.url);
         const meta = await this.metadata;
         // Check if this resource is hashed and already exists in the cache of a prior version.
-        if (this.hashes.has(url)) {
-            const hash = this.hashes.get(url);
+        if (this.hashes.has(req.url)) {
+            const hash = this.hashes.get(req.url);
             // Check the caches of prior versions, using the hash to ensure the correct version of
             // the resource is loaded.
-            const res = await updateFrom.lookupResourceWithHash(url, hash);
+            const res = await updateFrom.lookupResourceWithHash(req.url, hash);
             // If a previously cached version was available, copy it over to this cache.
             if (res !== null) {
                 // Copy to this cache.
