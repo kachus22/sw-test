@@ -718,7 +718,7 @@ class AssetGroup {
             return await this.scope.fetch(req);
         }
         catch (err) {
-            console.log(err, 1);
+            window.console.log(err);
             return this.adapter.newResponse('', {
                 status: 504,
                 statusText: 'Gateway Timeout',
