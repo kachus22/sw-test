@@ -718,7 +718,7 @@ class AssetGroup {
             return await this.scope.fetch(req);
         }
         catch (err) {
-            LocalStoarge.addItem(Date.now(), err);
+            console.log(err, 1);
             return this.adapter.newResponse('', {
                 status: 504,
                 statusText: 'Gateway Timeout',
