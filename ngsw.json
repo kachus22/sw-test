@@ -1,17 +1,17 @@
 {
   "configVersion": 1,
-  "index": "/SW-Test/index.html",
+  "index": "./index.html",
   "assetGroups": [
     {
       "name": "app",
       "installMode": "prefetch",
       "updateMode": "prefetch",
       "urls": [
-        "/SW-Test/index.html",
-        "/SW-Test/inline.318b50c57b4eba3d437b.bundle.js",
-        "/SW-Test/main.1da0b36212267ae2a9bd.bundle.js",
-        "/SW-Test/polyfills.bf95165a1d5098766b92.bundle.js",
-        "/SW-Test/styles.ac89bfdd6de82636b768.bundle.css"
+        "./index.html",
+        "./inline.318b50c57b4eba3d437b.bundle.js",
+        "./main.1da0b36212267ae2a9bd.bundle.js",
+        "./polyfills.bf95165a1d5098766b92.bundle.js",
+        "./styles.ac89bfdd6de82636b768.bundle.css"
       ],
       "patterns": []
     },
@@ -25,10 +25,10 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "/SW-Test/inline.318b50c57b4eba3d437b.bundle.js": "998c6060446975e566fd17509558ddc68d72eec3",
-    "/SW-Test/main.1da0b36212267ae2a9bd.bundle.js": "7828d52d4dee3ec72ab82c18a72a674485138fa5",
-    "/SW-Test/polyfills.bf95165a1d5098766b92.bundle.js": "5f49131c0c147a20f91b1e77814434e0c77bd3dc",
-    "/SW-Test/styles.ac89bfdd6de82636b768.bundle.css": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
-    "/SW-Test/index.html": "8902bd6645c11efd68393e2aa64c6f23fce8086b"
+    "./inline.318b50c57b4eba3d437b.bundle.js": "998c6060446975e566fd17509558ddc68d72eec3",
+    "./main.1da0b36212267ae2a9bd.bundle.js": "7828d52d4dee3ec72ab82c18a72a674485138fa5",
+    "./polyfills.bf95165a1d5098766b92.bundle.js": "5f49131c0c147a20f91b1e77814434e0c77bd3dc",
+    "./styles.ac89bfdd6de82636b768.bundle.css": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+    "./index.html": "8902bd6645c11efd68393e2aa64c6f23fce8086b"
   }
 }
