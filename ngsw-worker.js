@@ -2292,7 +2292,7 @@ class Driver {
         }
         catch (err) {
             this.debugger.log(err, `Error occurred while updating to manifest ${hash}`);
-            this.state = DriverReadyState.EXISTING_CLIENTS_ONLY;
+            // this.state = DriverReadyState.EXISTING_CLIENTS_ONLY;
             this.stateMessage = `Degraded due to failed initialization: ${errorToString(err)}`;
             return false;
         }
