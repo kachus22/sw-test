@@ -1,17 +1,17 @@
 {
   "configVersion": 1,
-  "index": "https://zipengye.github.io/SW-Test/index.html",
+  "index": "http://zipengye.github.io/SW-Test/index.html",
   "assetGroups": [
     {
       "name": "app",
       "installMode": "prefetch",
       "updateMode": "prefetch",
       "urls": [
-        "./index.html",
-        "./inline.318b50c57b4eba3d437b.bundle.js",
-        "./main.1da0b36212267ae2a9bd.bundle.js",
-        "./polyfills.bf95165a1d5098766b92.bundle.js",
-        "./styles.ac89bfdd6de82636b768.bundle.css"
+        "http://zipengye.github.io/SW-Test/index.html",
+        "http://zipengye.github.io/SW-Test/inline.18632fa5450645f7bba1.bundle.js",
+        "http://zipengye.github.io/SW-Test/main.1da0b36212267ae2a9bd.bundle.js",
+        "http://zipengye.github.io/SW-Test/polyfills.bf95165a1d5098766b92.bundle.js",
+        "http://zipengye.github.io/SW-Test/styles.ac89bfdd6de82636b768.bundle.css"
       ],
       "patterns": []
     },
@@ -25,10 +25,10 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "./inline.318b50c57b4eba3d437b.bundle.js": "998c6060446975e566fd17509558ddc68d72eec3",
-    "./main.1da0b36212267ae2a9bd.bundle.js": "7828d52d4dee3ec72ab82c18a72a674485138fa5",
-    "./polyfills.bf95165a1d5098766b92.bundle.js": "5f49131c0c147a20f91b1e77814434e0c77bd3dc",
-    "./styles.ac89bfdd6de82636b768.bundle.css": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
-    "./index.html": "8902bd6645c11efd68393e2aa64c6f23fce8086b"
+    "http://zipengye.github.io/SW-Test/inline.18632fa5450645f7bba1.bundle.js": "a5f818e1e413c9020b2a6c020627e8b982d834f6",
+    "http://zipengye.github.io/SW-Test/main.1da0b36212267ae2a9bd.bundle.js": "7828d52d4dee3ec72ab82c18a72a674485138fa5",
+    "http://zipengye.github.io/SW-Test/polyfills.bf95165a1d5098766b92.bundle.js": "5f49131c0c147a20f91b1e77814434e0c77bd3dc",
+    "http://zipengye.github.io/SW-Test/styles.ac89bfdd6de82636b768.bundle.css": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+    "http://zipengye.github.io/SW-Test/index.html": "24e1a436169e2fca9804ff21671e37821b2ffd67"
   }
 }
