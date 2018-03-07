@@ -718,6 +718,7 @@ class AssetGroup {
             return await this.scope.fetch(req);
         }
         catch (err) {
+            LocalStoarge.addItem(Date.now(), err);
             return this.adapter.newResponse('', {
                 status: 504,
                 statusText: 'Gateway Timeout',
@@ -1075,6 +1076,7 @@ class DataGroup {
         // Since fetch() will always return a response, undefined indicates a timeout.
         if (res === undefined) {
             // The request timed out. Return a Gateway Timeout error.
+            LocalStoarge.addItem(Date.now(), [timeoutFetch, networkFetch]);
             res = this.adapter.newResponse(null, { status: 504, statusText: 'Gateway Timeout' });
             // Cache the network response eventually.
             ctx.waitUntil(this.safeCacheResponse(req, networkFetch));
@@ -1125,6 +1127,7 @@ class DataGroup {
                     return await networkFetch;
                 }
                 catch (err) {
+                    LocalStoarge.addItem(Date.now(), err);
                     return this.adapter.newResponse(null, {
                         status: 504,
                         statusText: 'Gateway Timeout',
@@ -1252,6 +1255,7 @@ class DataGroup {
             return this.scope.fetch(req);
         }
         catch (err) {
+            LocalStoarge.addItem(Date.now(), err);
             return this.adapter.newResponse(null, {
                 status: 504,
                 statusText: 'Gateway Timeout',
@@ -2465,6 +2469,7 @@ class Driver {
         }
         catch (err) {
             this.debugger.log(err, `Driver.fetch(${req.url})`);
+            LocalStoarge.addItem(Date.now(), err);
             return this.adapter.newResponse(null, {
                 status: 504,
                 statusText: 'Gateway Timeout',
