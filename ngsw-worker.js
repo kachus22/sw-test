@@ -393,7 +393,7 @@ class AssetGroup {
      * Process a request for a given resource and return it, or return null if it's not available.
      */
     async handleFetch(req, ctx) {
-        const url = req.url;//this.getConfigUrl(req.url);
+        const url = this.getConfigUrl(req.url);
         // Either the request matches one of the known resource URLs, one of the patterns for
         // dynamically matched URLs, or neither. Determine which is the case for this request in
         // order to decide how to handle it.
@@ -441,10 +441,10 @@ class AssetGroup {
         const parsed = this.adapter.parseUrl(url, this.scope.registration.scope);
         if (parsed.origin === this.origin) {
             // The URL is relative to the SW's origin domain.
-            return parsed.path;
+            /*return parsed.path;*/ return url; // overriding default @angular/service-worker URL behavior, to handle routing bug angular/angular #21636
         }
         else {
-          return url;
+            return url;
         }
     }
     /**
@@ -2235,7 +2235,7 @@ class Driver {
             // The latest manifest is broken. This means that new clients are at the mercy of the
             // network, but caches continue to be valid for previous versions. This is
             // unfortunate but unavoidable.
-            this.state = DriverReadyState.EXISTING_CLIENTS_ONLY;
+            /*this.state = DriverReadyState.EXISTING_CLIENTS_ONLY;*/ // removing EXISTING_CLIENTS_ONLY state, as it behaves incorrectly in offline testing, both locally & on GitHub pages
             this.stateMessage = `Degraded due to failed initialization: ${errorToString(err)}`;
             // Cancel the binding for these clients.
             Array.from(this.clientVersionMap.keys())
@@ -2292,7 +2292,7 @@ class Driver {
         }
         catch (err) {
             this.debugger.log(err, `Error occurred while updating to manifest ${hash}`);
-            // this.state = DriverReadyState.EXISTING_CLIENTS_ONLY;
+            /*this.state = DriverReadyState.EXISTING_CLIENTS_ONLY;*/ // removing EXISTING_CLIENTS_ONLY state, as it behaves incorrectly in offline testing, both locally & on GitHub pages
             this.stateMessage = `Degraded due to failed initialization: ${errorToString(err)}`;
             return false;
         }

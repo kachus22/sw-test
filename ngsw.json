@@ -1,17 +1,18 @@
 {
   "configVersion": 1,
-  "index": "https://zipengye.github.io/SW-Test/index.html",
+  "index": "https://zipengye.github.io/index.html", 
   "assetGroups": [
     {
       "name": "app",
       "installMode": "prefetch",
       "updateMode": "prefetch",
       "urls": [
-        "https://zipengye.github.io/SW-Test/index.html",
-        "https://zipengye.github.io/SW-Test/inline.c05d369413a6dd0160c3.bundle.js",
-        "https://zipengye.github.io/SW-Test/main.1da0b36212267ae2a9bd.bundle.js",
-        "https://zipengye.github.io/SW-Test/polyfills.bf95165a1d5098766b92.bundle.js",
-        "https://zipengye.github.io/SW-Test/styles.ac89bfdd6de82636b768.bundle.css"
+        "https://zipengye.github.io/favicon.ico",
+        "https://zipengye.github.io/index.html",
+        "https://zipengye.github.io/inline.b081fbd501a3ca241a47.bundle.js",
+        "https://zipengye.github.io/main.efcf56686f59151d3bf6.bundle.js",
+        "https://zipengye.github.io/polyfills.2196c08122c2a13ef470.bundle.js",
+        "https://zipengye.github.io/styles.b669bb56fa7f5af0520f.bundle.css"
       ],
       "patterns": []
     },
@@ -19,16 +20,26 @@
       "name": "assets",
       "installMode": "lazy",
       "updateMode": "prefetch",
-      "urls": [],
+      "urls": [
+        "https://zipengye.github.io/assets/css/material-icon.css",
+        "https://zipengye.github.io/assets/font/material-icon-font.woff2",
+        "https://zipengye.github.io/assets/img/github/github.svg",
+        "https://zipengye.github.io/assets/img/youtube/youtube.png"
+      ],
       "patterns": []
     }
   ],
   "dataGroups": [],
   "hashTable": {
-    "https://zipengye.github.io/SW-Test/inline.c05d369413a6dd0160c3.bundle.js": "ba633b6a0af82697f4446aab1b5909a040f759f0",
-    "https://zipengye.github.io/SW-Test/main.1da0b36212267ae2a9bd.bundle.js": "7828d52d4dee3ec72ab82c18a72a674485138fa5",
-    "https://zipengye.github.io/SW-Test/polyfills.bf95165a1d5098766b92.bundle.js": "5f49131c0c147a20f91b1e77814434e0c77bd3dc",
-    "https://zipengye.github.io/SW-Test/styles.ac89bfdd6de82636b768.bundle.css": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
-    "https://zipengye.github.io/SW-Test/index.html": "543f50009c135ad9585f096e4eba43fbd355eef0"
+    "https://zipengye.github.io/inline.b081fbd501a3ca241a47.bundle.js": "49f1c16fb4ea4ad0b6663bedab75f1b83f04b599",
+    "https://zipengye.github.io/assets/css/material-icon.css": "5f405cc10e411c47ac0f1ea8be2aa7eb9997828f",
+    "https://zipengye.github.io/main.efcf56686f59151d3bf6.bundle.js": "9e22a769661e1fc0be37687ed89d0d14d6852638",
+    "https://zipengye.github.io/assets/font/material-icon-font.woff2": "f27268455e6cd614f49d428363be98c021579caf",
+    "https://zipengye.github.io/polyfills.2196c08122c2a13ef470.bundle.js": "a1fd4106b410223ffb8d3d6c9589f70dec89c9ed",
+    "https://zipengye.github.io/assets/img/github/github.svg": "26a18aaeb14964e04f691a49eb7325c737759147",
+    "https://zipengye.github.io/styles.b669bb56fa7f5af0520f.bundle.css": "bc733cbe58f24e9413b45a9c8e341e1b389b0f11",
+    "https://zipengye.github.io/assets/img/youtube/youtube.png": "918f7097f292cbe11db5d2f36c9692124be9f66f",
+    "https://zipengye.github.io/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
+    "https://zipengye.github.io/index.html": "92c8ff06e783bb7f936212c70f720f8c9a6033aa"
   }
 }
