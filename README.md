@@ -62,6 +62,7 @@ git clone https://github.com/ZiPengYe/sw-test.git
 cd sw-test
 npm i --no-optional
 # replace YOUR_PATH as https://zipengye.github.io/sw-test/
+# and set YOUR_PATH to SITE_BASE_HREF in fix-sw.js
 git -prod -bh YOUR_PATH && node build/fix-sw
 ```
 
