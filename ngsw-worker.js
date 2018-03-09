@@ -393,7 +393,7 @@ class AssetGroup {
      * Process a request for a given resource and return it, or return null if it's not available.
      */
     async handleFetch(req, ctx) {
-        const url = this.getConfigUrl(req.url);
+        const url = req.url;//this.getConfigUrl(req.url);
         // Either the request matches one of the known resource URLs, one of the patterns for
         // dynamically matched URLs, or neither. Determine which is the case for this request in
         // order to decide how to handle it.
